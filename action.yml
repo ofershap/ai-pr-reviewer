@@ -1,4 +1,4 @@
-name: "AI PR Reviewer"
+name: "AI Inline PR Review"
 description: "Review pull requests with AI — posts inline comments on code issues"
 author: "Ofer Shapira"
 branding:
