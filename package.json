@@ -1,0 +1,45 @@
+{
+  "name": "ai-pr-reviewer",
+  "version": "0.0.0-development",
+  "private": true,
+  "description": "GitHub Action that reviews PRs with AI — posts inline comments on code issues",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "github-action",
+    "ai",
+    "code-review",
+    "pull-request",
+    "openai",
+    "anthropic",
+    "gpt-4",
+    "claude"
+  ],
+  "author": "Ofer Shapira <ofer@ofershap.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ofershap/ai-pr-reviewer.git"
+  },
+  "homepage": "https://github.com/ofershap/ai-pr-reviewer",
+  "dependencies": {
+    "@actions/core": "^1.11.0",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.0.0"
+  }
+}

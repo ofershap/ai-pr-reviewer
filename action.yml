@@ -1,0 +1,38 @@
+name: "AI PR Reviewer"
+description: "Review pull requests with AI — posts inline comments on code issues"
+author: "Ofer Shapira"
+branding:
+  icon: "eye"
+  color: "purple"
+
+inputs:
+  github-token:
+    description: "GitHub token for posting review comments"
+    required: true
+    default: ${{ github.token }}
+  openai-api-key:
+    description: "OpenAI API key"
+    required: false
+  anthropic-api-key:
+    description: "Anthropic API key"
+    required: false
+  model:
+    description: "Model to use (e.g. gpt-4o, claude-sonnet-4-20250514)"
+    required: false
+    default: "gpt-4o"
+  max-files:
+    description: "Maximum number of files to review"
+    required: false
+    default: "20"
+  exclude-patterns:
+    description: "Glob patterns to exclude (comma-separated)"
+    required: false
+    default: "*.lock,*.min.js,*.min.css,dist/**,node_modules/**"
+  custom-prompt:
+    description: "Additional instructions for the reviewer"
+    required: false
+    default: ""
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
