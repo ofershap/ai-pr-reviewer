@@ -1,11 +1,11 @@
-# ai-pr-reviewer
+# AI PR Reviewer — GitHub Action for Automated Code Review
 
 [![CI](https://github.com/ofershap/ai-pr-reviewer/actions/workflows/ci.yml/badge.svg)](https://github.com/ofershap/ai-pr-reviewer/actions/workflows/ci.yml)
 [![license](https://img.shields.io/github/license/ofershap/ai-pr-reviewer)](https://github.com/ofershap/ai-pr-reviewer/blob/main/LICENSE)
 
-GitHub Action that reviews pull requests with AI. Posts inline comments on bugs, security issues, and code smells. Supports OpenAI and Anthropic.
+A GitHub Action that reviews pull requests with AI. Posts inline comments on bugs, security issues, and code smells. Supports OpenAI (GPT-4o) and Anthropic (Claude).
 
-![Demo](assets/demo.gif)
+![AI PR reviewer demo — inline code review comments on a GitHub pull request](assets/demo.gif)
 
 ## Quick Start
 
